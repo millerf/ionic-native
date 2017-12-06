@@ -50,20 +50,20 @@ import {
 @Injectable()
 export class MozaikListView extends IonicNativePlugin {
 
-  @Cordova()
-  MzkPluginInit(): any {
+  @Cordova({ sync: true })
+  MzkPluginInit(args: any): any {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
 
-  @Cordova()
-  MzkPluginSetJSON(): any {
+  @Cordova({ sync: true })
+  MzkPluginSetJSON(args: any): any {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
 
-  @Cordova()
-  MzkPluginKill(): any {
+  @Cordova({ sync: true })
+  MzkPluginKill(args: any): any {
     return; // We add return; here to avoid any IDE / Compiler errors
   }
 
